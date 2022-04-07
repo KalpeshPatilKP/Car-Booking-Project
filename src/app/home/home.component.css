@@ -1,0 +1,9 @@
+.app{
+    background-image: url("/assets/cab.jpg");
+    background-size: cover;
+    padding-top: 200px;
+    padding-right: 500px;
+}
+h1{
+    color: rgb(251, 251, 251);
+}
