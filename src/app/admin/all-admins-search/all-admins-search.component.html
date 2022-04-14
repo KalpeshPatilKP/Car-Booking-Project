@@ -1,0 +1,135 @@
+<!-- <p>
+  all-admins-search works!
+</p> -->
+
+
+<div class="container">
+  <h2 class="text-center text-info"> Manage Admin </h2>
+  
+  </div>
+ 
+  
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">ID</th>
+      <th scope="col">UserName</th>
+      <th scope="col">Mail</th>
+      <th scope="col">PASSWORD</th>
+      <th scope="col">MOBILE</th>
+      <th scope="col">ACTION</th>
+
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>sai</td>
+      <td>abc@gmail.com</td>
+      <td>sai1233</td>
+      <td>9012561233</td>
+      <td>
+        <div class="btn-group">
+        <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+            aria-expanded="false">
+          Action
+        </button>
+        <div class="dropdown-menu">
+
+          <a class="dropdown-item ActionUpdate" (click)="updateRedirect()">Edit</a>
+          <a class="dropdown-item ActionDelete" (click)="deleteAdminById()">Delete</a>
+
+        </div>
+      </div>
+    </td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>praksh</td>
+      <td>prksh@gmailcom</td>
+      <td>prk234</td>
+      <td>890231233</td>
+      <td>
+        <div class="btn-group">
+        <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+            aria-expanded="false">
+          Action
+        </button>
+        <div class="dropdown-menu">
+
+          <a class="dropdown-item ActionUpdate" (click)="updateRedirect()">Edit</a>
+          <a class="dropdown-item ActionDelete" (click)="deleteAdminById()">Delete</a>
+
+        </div>
+      </div>
+    </td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td>pravim</td>
+      <td>bcd@gmail.com</td>
+      <td>prv789</td>
+      <td>675990134</td>
+      <td>
+        <div class="btn-group">
+        <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+            aria-expanded="false">
+          Action
+        </button>
+        <div class="dropdown-menu">
+
+          <a class="dropdown-item ActionUpdate" (click)="updateRedirect()">Edit</a>
+          <a class="dropdown-item ActionDelete" (click)="deleteAdminById()">Delete</a>
+
+        </div>
+      </div>
+    </td>
+    </tr>
+    <tr>
+      <th scope="row">4</th>
+      <td>hari</td>
+      <td>hari@gmail.com</td>
+      <td>har456</td>
+      <td>909871233</td>
+      <td>
+        <div class="btn-group">
+        <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+            aria-expanded="false">
+          Action
+        </button>
+        <div class="dropdown-menu">
+
+          <a class="dropdown-item ActionUpdate" (click)="updateRedirect()">Edit</a>
+          <a class="dropdown-item ActionDelete" (click)="deleteAdminById()">Delete</a>
+
+        </div>
+      </div>
+    </td>
+    </tr>
+    <tr>
+      <th scope="row">5</th>
+      <td>tiger</td>
+      <td>tig@gmail.com</td>
+      <td>tig1233</td>
+      <td>67850943</td>
+      <td>
+        <div class="btn-group">
+        <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+            aria-expanded="false">
+          Action
+        </button>
+        <div class="dropdown-menu">
+
+          <a class="dropdown-item ActionUpdate" (click)="updateRedirect()">Edit</a>
+          <a class="dropdown-item ActionDelete" (click)="deleteAdminById()">Delete</a>
+
+        </div>
+      </div>
+    </td>
+    </tr>
+
+  </tbody>
+</table>
+<img src="assets/taxiveh.png">
+
+<router-outlet></router-outlet>

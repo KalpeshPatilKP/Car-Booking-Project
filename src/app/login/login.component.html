@@ -1,19 +1,28 @@
-<div class="card text-center">
-  <div class="card-header">
-    <ul class="nav nav-tabs card-header-tabs">
-      <li class="nav-item">
-        <a class="nav-link active"  href="#">Admin</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Customer</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link disabled">Driver</a>
-      </li>
-    </ul>
+
+
+
+<div class="container" >
+  <div class="background-image"  style="background-image: url('/assets/bg15.jpg'); background-repeat: no-repeat; max-width:auto;  height:90vh; background-size:100% 100%; " >
+ 
+    <div class="row justify-content-center " >
+
+    <div class="card shadow bg-blue" style="box-shadow: 2px 2px 2px blue; " >
+     
+        <div  style="padding-top: 20px; text-align: center;">
+          <div class="card-header" style="text-align: center;"><h2 class="card-title">Login</h2></div>
+          <ul class="nav-tabs">
+            
+              <a routerLink='./customerlogin' ><b>Customer</b></a>  
+           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            
+              <a routerLink="./driver" ><b>Driver</b></a> 
+              &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;
+            
+              <a routerLink="./admin" ><b>Admin</b></a>
+            
+          </ul>
+          
+      </div>
+    </div>
   </div>
-  
-</div>
-
-
-
+  <router-outlet></router-outlet>

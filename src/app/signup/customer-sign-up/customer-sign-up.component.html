@@ -1,3 +1,121 @@
-<p>
-  customer-sign-up works!
-</p>
+<!-- <div class="row g-4">
+  <div class="col-auto">
+    <div class="container" style="padding-top: 10px; padding-left: 550px;">
+      <h1>Customer Sign Up</h1>
+      <p class="lead sm">Please fill in this form to create Driver account</p>
+
+      <hr>
+      <div class="text-right">
+        Already a member? Login <a routerLink="/login/customer">here</a>
+</div>
+<form [formGroup]="myform1" (ngSubmit)="signupForCustomer()">
+  <div class="form-group">
+    <label for="username">Username</label>
+    <input type="text" class="form-control" id="exampleInputUsername1" aria-describedby="emailHelp" formControlName="uname">
+    <div *ngIf="myform1.controls.uname.touched && myform1.controls.uname.invalid">
+      <small *ngIf="myform1.controls.uname.errors.required" style="color:red">Username is Required</small>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label for="email">Email</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" formControlName="myemail">
+    <div *ngIf="myform1.controls.myemail.touched && myform1.controls.myemail.invalid">
+      <small *ngIf="myform1.controls.myemail.errors.required" style="color:red">Email is Required</small>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label for="password">Password</label>
+    <input type="password" class="form-control" id="exampleInputPassword1" formControlName="pwd">
+    <div *ngIf="myform1.controls.pwd.touched && myform1.controls.pwd.invalid">
+      <small *ngIf="myform1.controls.pwd.errors.required" style="color:red">Password is Required</small>
+    </div>
+   </div>
+
+   <div class="form-group">
+    <label for="mobileNumber">Mobile Number</label>
+    <input type="text" class="form-control" id="exampleInputMobileNumber1" formControlName="mno">
+    <div *ngIf="myform1.controls.mno.touched && myform1.controls.mno.invalid">
+      <small *ngIf="myform1.controls.mno.errors.required" style="color:red">Mobile Number is Required</small>
+    </div>
+   </div>
+  
+  
+  <button type="submit" class="btn btn-primary" [disabled]="myform1.invalid">SignUp</button>
+ </form> -->
+
+<!-- 
+ <div class="container mt-5">
+  <div class="card"> -->
+    <div class="row g-4">
+      <div class="col-auto">
+        <div class="container" style="padding-top: 10px; padding-left: 550px; padding-right: 350px;">
+          <h1>Customer Sign Up</h1>
+          <p class="lead sm">Please fill in this form to create Driver account</p>
+    
+          <hr>
+          <div class="text-right">
+            Already a member? Login <a routerLink="/login/customerlogin">here</a>
+    </div>
+  <form #myform="ngForm">
+      
+          <div class="row">
+
+            <div class=" mt-2 mb-2col-1g-12 col-12">
+              <div class="form-group">
+                <label for="lid"><b>Username</b></label>
+                <input type="text" #n1="ngModel" class="form-control" id="uname"  ngModel name="uname" required>
+                <div *ngIf="n1.touched && n1.invalid" style="color: red">
+                    <small *ngIf="n1.errors.required" class="error">*Username is Required</small>    
+                </div>  
+              </div>
+                </div>
+
+      
+      <div class=" mt-2 mb-2col-1g-12 col-12">
+        <div class="form-group">
+          <label for="emailid"><b>Email</b></label>
+          <input type="email" #n4="ngModel" class="form-control" id="email"  ngModel name="email" required>
+          <div *ngIf="n4.touched && n4.invalid" style="color: red">
+              <small *ngIf="n4.errors.required" class="error">*Email is Required</small>    
+          </div>  
+        </div>
+      </div>
+
+      <div class=" mt-2 mb-2 col-1g-12 col-12">
+        <div class="form-group">
+          <label for="fname"><b>Password</b></label>
+          <input type="password" #n2="ngModel" class="form-control" id="pwd"  ngModel name="pwd" required   minlength="8">
+          <div *ngIf= "n2.touched && n2.invalid" style="color: red"> 
+              <small *ngIf="n2.errors.required" class="error">Password is Required</small>
+              <small *ngIf="n2.errors.minlength" class="error">Password Should be Minimum 8 Characters</small>
+          </div>  
+        </div>
+      </div>
+
+      <div class=" mt-2 mb-2 col-1g-12 col-12">
+        <div class="form-group">
+          <label for="fname"><b>Mobile No</b></label>
+          <input type="text" #n3="ngModel" class="form-control" id="mno"  ngModel name="mno" required   minlength="10">
+          <div *ngIf="(n3.dirty ||n3.touched) && n3.invalid" style="color: red"> 
+              <small *ngIf="n3.errors.required" class="error">Mobile No is Required</small>
+              <small *ngIf="n3.errors.minlength" class="error">Mobile No Should be Minimum 10 Characters</small>
+          </div>  
+        </div>
+      </div>
+      
+           
+       <div class="text-center">
+        <br> 
+        <input type="submit" class="btn btn-primary" [disabled]="myform.invalid" value="Register" (click)="signupForCustomer(myform)">
+      </div>
+      <br>
+      <a style="color: #ffff;"  routerLink="/home">Back</a>
+      <div class="alert alert-success text-center" role="alert" *ngIf="flag">
+        {{msg}}
+      </div>
+    </div>
+  </form>
+</div>
+</div>

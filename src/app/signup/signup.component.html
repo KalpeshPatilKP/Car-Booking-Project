@@ -1,3 +1,26 @@
-<p>
-  signup works!
-</p>
+    <div class="row justify-content-center ">
+      <div class="card shadow bg-white " style="box-shadow: 2px 2px 2px blue; background-image: url('/assets/bg15.jpg'); height: fit-content; background-repeat: no-repeat; background-size: cover;">
+        <!-- <div class="card-header" style="text-align: center;"><h2 class="card-title">Sign Up</h2></div>
+          <ul ngbNav class="nav-tabs">
+            <li >
+              <a [routerLink]="['./customer']" ngbNavLink> <h5>Sign up to ride</h5> </a>
+            </li>
+            <li >
+              <a [routerLink]="['./driver']" ngbNavLink> <h5>Sign up to drive</h5> </a>
+            </li>
+          </ul> 
+      </div> -->
+      <div  style="padding-top: 20px; text-align: center;">
+        <div class="card-header" style="text-align: center;"><h2 class="card-title">Sign Up</h2></div>
+        <ul class="nav-tabs">
+            <a routerLink="./customer" ><b>Sign up to ride</b></a>  
+         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          
+            <a routerLink="./driver" ><b>Sign up to drive</b></a>   
+        </ul>
+        
+    </div>
+<router-outlet></router-outlet>
+ 
+  
+  

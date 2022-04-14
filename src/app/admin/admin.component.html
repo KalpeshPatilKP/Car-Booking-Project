@@ -1,0 +1,24 @@
+<p>
+  admin works!
+</p>
+
+<nav>
+  <ul class="nav justify-content-center">
+    <li class="nav-item">
+      <a class="nav-link active" routerLink="./profile">Your Profile</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" routerLink="['./manageAdmins']">Manage Admins</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" routerLink="./manageCustomers">Manage Customers</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" routerLink="./manageDrivers">Manage Drivers</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" (click)="logOut()"> LogOut</a>
+    </li>
+  </ul>
+</nav>
+<router-outlet></router-outlet>

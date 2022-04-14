@@ -1,0 +1,93 @@
+<!-- <p>
+  all-customers-search works!
+</p> -->
+
+
+<div class="container">
+  <h2 class="text-center text-info"> Manage Customers </h2>
+  
+  </div>
+ 
+  
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">ID</th>
+      <th scope="col">UserName</th>
+      <th scope="col">Mail</th>
+      <th scope="col">RIDES</th>
+      <th scope="col">MOBILE</th>
+      <th scope="col">ACTION</th>
+
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>kali</td>
+      <td>kalc@gmail.com</td>
+      <td>3</td>
+      <td>9012561234</td>
+      <td>
+        <div class="btn-group">
+        <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+            aria-expanded="false">
+          Action
+        </button>
+        <div class="dropdown-menu">
+
+          <a class="dropdown-item ActionUpdate" (click)="updateRedirect(admin.adminId)">Edit</a>
+          <a class="dropdown-item ActionDelete" (click)="deleteAdminById(admin.adminId)">Delete</a>
+
+        </div>
+      </div>
+    </td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>shad</td>
+      <td>shad@gmailcom</td>
+      <td>4</td>
+      <td>990231233</td>
+      <td>
+        <div class="btn-group">
+        <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+            aria-expanded="false">
+          Action
+        </button>
+        <div class="dropdown-menu">
+
+          <a class="dropdown-item ActionUpdate" (click)="updateRedirect(admin.adminId)">Edit</a>
+          <a class="dropdown-item ActionDelete" (click)="deleteAdminById(admin.adminId)">Delete</a>
+
+        </div>
+      </div>
+    </td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td>priy</td>
+      <td>pdd@gmail.com</td>
+      <td>9</td>
+      <td>675990134</td>
+      <td>
+        <div class="btn-group">
+        <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+            aria-expanded="false">
+          Action
+        </button>
+        <div class="dropdown-menu">
+
+          <a class="dropdown-item ActionUpdate" (click)="updateRedirect(admin.adminId)">Edit</a>
+          <a class="dropdown-item ActionDelete" (click)="deleteAdminById(admin.adminId)">Delete</a>
+
+        </div>
+      </div>
+    </td>
+    </tr>
+<br>
+  </tbody>
+</table>
+<img src="assets/cabcust.webp">
+
+<router-outlet></router-outlet>
